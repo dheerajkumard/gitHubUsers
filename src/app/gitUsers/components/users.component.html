@@ -1,0 +1,11 @@
+<button (click)="getUsers()">Get Users</button>
+
+<div *ngFor = "let x of resp">
+    <div class='test'>
+    <img class="circle" src="{{ x.avatar_url }}">
+    <div>
+        <div><a href="{{x.html_url}}" target="_blank">{{ x.login }}</a></div>
+        <!-- <div>{{x.html_url}}</div> -->
+    </div>
+    </div>
+</div>
